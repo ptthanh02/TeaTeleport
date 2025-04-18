@@ -1,0 +1,146 @@
+#   MESSAGE STRUCTURE:
+#   message_name:                # Unique identifier for the message
+#     enabled: true/false       # Enable or disable this entire message (default: true if not specified)
+#     message: "Text content"   # Main chat message (optional)
+#     title: "Title text"       # Title display (optional)
+#     subtitle: "Subtitle"      # Subtitle display (optional)
+#     action_bar: "Text"        # Action bar text (optional)
+#     sound: sound.effect       # Sound to play (optional)
+
+# ------------------------------------------------------
+#                  Messages Prefix
+# ------------------------------------------------------
+prefix: '&8[&#95C088&lᴛᴇᴀᴛᴇʟᴇᴘᴏʀᴛ&8] &r'
+
+# ------------------------------------------------------
+#                General Messages
+# ------------------------------------------------------
+error_player_only:
+  message: '&cThis command can only be used by players.'
+  sound: entity.enderman.teleport
+
+error_permission:
+  message: '&cYou don''t have permission to use this command.'
+  sound: entity.enderman.teleport
+
+error_invalid_command:
+  message: '&cInvalid command. Use &6/tt help &cfor a list of commands.'
+
+help_message:
+  message: |
+    &8&m
+    &8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    &8                 &7&#F5F5DC&lᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ
+    &8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    &8» &#4A7C59/ᴛᴛ sᴇᴛ &#F5F5DC<ɴᴀᴍᴇ> &#C9E4C5- sᴇᴛ ᴀ ᴛᴇʟᴇᴘᴏʀᴛ ʟᴏᴄᴀᴛɪᴏɴ  
+    &8» &#4A7C59/ᴛᴛ ᴛᴘ &#F5F5DC<ɴᴀᴍᴇ> &#C9E4C5- ᴛᴇʟᴇᴘᴏʀᴛ ᴛᴏ ᴀ ʟᴏᴄᴀᴛɪᴏɴ  
+    &8» &#4A7C59/ᴛᴛ ᴛᴘᴀʟʟ &#F5F5DC<ɴᴀᴍᴇ> &#C9E4C5- ᴛᴇʟᴇᴘᴏʀᴛ ᴀʟʟ ᴘʟᴀʏᴇʀs ᴛᴏ ᴀ ʟᴏᴄᴀᴛɪᴏɴ
+    &8» &#4A7C59/ᴛᴛ ᴛᴘᴘʟᴀʏᴇʀ &#F5F5DC<ᴘʟᴀʏᴇʀ> <ɴᴀᴍᴇ> &#C9E4C5- ᴛᴇʟᴇᴘᴏʀᴛ ᴀ sᴘᴇᴄɪғɪᴄ ᴘʟᴀʏᴇʀ ᴛᴏ ᴀ ʟᴏᴄᴀᴛɪᴏɴ
+    &8» &#4A7C59/ᴛᴛ ᴡᴏʀʟᴅᴛᴘ &#F5F5DC<ᴡᴏʀʟᴅ> <ɴᴀᴍᴇ> &#C9E4C5- ᴛᴇʟᴇᴘᴏʀᴛ ᴀʟʟ ᴘʟᴀʏᴇʀs ɪɴ ᴀ ᴡᴏʀʟᴅ ᴛᴏ ᴀ ʟᴏᴄᴀᴛɪᴏɴ
+    &8» &#4A7C59/ᴛᴛ ʟɪsᴛ &#C9E4C5- ʟɪsᴛ ᴀʟʟ ᴛᴇʟᴇᴘᴏʀᴛ ʟᴏᴄᴀᴛɪᴏɴs  
+    &8» &#4A7C59/ᴛᴛ ᴅᴇʟᴇᴛᴇ &#F5F5DC<ɴᴀᴍᴇ> &#C9E4C5- ᴅᴇʟᴇᴛᴇ ᴀ ᴛᴇʟᴇᴘᴏʀᴛ ʟᴏᴄᴀᴛɪᴏɴ  
+    &8» &#4A7C59/ᴛᴛ ʀᴇʟᴏᴀᴅ &#C9E4C5- ʀᴇʟᴏᴀᴅ ᴘʟᴜɢɪɴ ᴄᴏɴꜰɪɢᴜʀᴀᴛɪᴏɴ
+    &8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  sound: entity.player.levelup
+
+# ------------------------------------------------------
+#             Location Commands
+# ------------------------------------------------------
+location_set:
+  message: '&#3287A9Location &f%name% &7has been set successfully.'
+  sound: entity.experience_orb.pickup
+
+location_set_usage:
+  message: '&cUsage: &6/tt set <name>'
+
+location_tp:
+  message: '&#3287A9Teleported to &f%name%&7.'
+  sound: entity.enderman.teleport
+
+location_tp_usage:
+  message: '&cUsage: &6/tt tp <name>'
+
+location_not_found:
+  message: '&cLocation &f%name% &cdoesn''t exist!'
+  sound: entity.villager.no
+
+location_list_header:
+  message: |-
+    &8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    &8[&#95C088&lᴛᴇᴀᴛᴇʟᴇᴘᴏʀᴛ&8] &#F5F5DC&lʟᴏᴄᴀᴛɪᴏɴs
+
+location_list_entry:
+  message: '&#4A7C59» &#F5F5DC%name% &#C9E4C5- %world% &8[&#C9E4C5%x%, %y%, %z%&8]'
+
+location_list_footer:
+  message: '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+  sound: entity.experience_orb.pickup
+
+location_list_empty:
+  message: '&#C9E4C5No teleport locations have been set yet. Use &#4A7C59/tt set &#F5F5DC<name>
+    &#C9E4C5to create one.'
+  sound: entity.villager.no
+
+location_delete:
+  message: '&#3287A9Location &f%name% &7has been deleted.'
+  sound: entity.experience_orb.pickup
+
+location_delete_usage:
+  message: '&cUsage: &6/tt delete <name>'
+
+# ------------------------------------------------------
+#             TeleportAll Commands
+# ------------------------------------------------------
+teleport_all_user:
+  message: '&#3287A9Teleported &f%count% &7players to &f%name%&7.'
+  sound: entity.experience_orb.pickup
+
+teleport_all_players:
+  message: You have been teleported to &f%name%&7.
+  sound: entity.enderman.teleport
+
+teleport_all_usage:
+  message: '&cUsage: &6/tt tpall <name>'
+
+# ------------------------------------------------------
+#             TeleportPlayer Commands
+# ------------------------------------------------------
+teleport_player_sender:
+  message: '&#3287A9Teleported player &f%player% &7to &f%name%&7.'
+  sound: entity.experience_orb.pickup
+
+teleport_player_target:
+  message: 'You have been teleported to &f%name%&7.'
+  sound: entity.enderman.teleport
+
+teleport_player_usage:
+  message: '&cUsage: &6/tt tpplayer <player> <location>'
+
+player_not_found:
+  message: '&cPlayer &f%player% &cis not online!'
+  sound: entity.villager.no
+
+# ------------------------------------------------------
+#             WorldTP Commands
+# ------------------------------------------------------
+world_teleport_user:
+  message: '&#3287A9Teleported &f%count% &7players from world &f%world% &7to &f%name%&7.'
+  sound: entity.enderman.teleport
+
+world_teleport_players:
+  message: You have been teleported from world &f%world% &7to &f%name%&7.
+  sound: entity.enderman.teleport
+
+world_teleport_usage:
+  message: '&cUsage: &6/tt worldtp <world> <name>'
+
+world_not_found:
+  message: '&cWorld &f%world% &cdoesn''t exist!'
+  sound: entity.villager.no
+
+# ------------------------------------------------------
+#              Plugin Management
+# ------------------------------------------------------
+command_reload_success:
+  message: '&#95C088TeaTeleport &7configuration and locations have been reloaded.'
+  sound: entity.experience_orb.pickup

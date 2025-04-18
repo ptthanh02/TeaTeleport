@@ -1,0 +1,56 @@
+name: TeaTeleport
+version: '${version}'
+main: dev.nighter.teaTeleport.TeaTeleport
+api-version: '1.21'
+authors: [ Nighter ]
+description: A plugin for managing teleport locations and teleporting groups of players
+folia-supported: true
+
+commands:
+  teateleport:
+    aliases: [tt]
+    description: Main command for TeaTeleport plugin
+    usage: /<command> [set|tp|tpall|tpplayer|worldtp|list|delete] [args...]
+    permission: teateleport.use
+
+permissions:
+  teateleport.use:
+    description: Allows using the base teateleport command
+    default: op
+  teateleport.set:
+    description: Allows setting teleport locations
+    default: op
+  teateleport.tp:
+    description: Allows teleporting to locations
+    default: op
+  teateleport.tpall:
+    description: Allows teleporting all players
+    default: op
+  teateleport.tpplayer:
+    description: Allows teleporting specific players to locations
+    default: op
+  teateleport.worldtp:
+    description: Allows teleporting all players in a world
+    default: op
+  teateleport.list:
+    description: Allows listing all teleport locations
+    default: op
+  teateleport.delete:
+    description: Allows deleting teleport locations
+    default: op
+  teateleport.reload:
+    description: Allows reloading the plugin configuration
+    default: op
+  teateleport.*:
+    description: Gives access to all TeaTeleport commands
+    default: op
+    children:
+      teateleport.use: true
+      teateleport.set: true
+      teateleport.tp: true
+      teateleport.tpall: true
+      teateleport.tpplayer: true
+      teateleport.worldtp: true
+      teateleport.list: true
+      teateleport.delete: true
+      teateleport.reload: true
